@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      text-align: center;
+      color: #fff;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: #ff6a88;
+      color: white;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #ff3c58;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Happy Birthday, Maharshi Jiju! 🎉</h1>
+    <button onclick="sendWhatsApp()">Open the Door!</button>
+  </div>
+
+  <script>
+    function sendWhatsApp() {
+      // WhatsApp pre-filled message link
+      const message = "🎉 Open the door! Look who's here 🥳";
+      const url = `https://wa.me/?text=${encodeURIComponent(message)}`;
+      window.open(url, "_blank");
+    }
+  </script>
+</body>
+</html>
